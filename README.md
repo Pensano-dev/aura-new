@@ -35,6 +35,21 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+
+## React Navigation
+First, you need to install them in your project:
+
+```bash
+npm install @react-navigation/native @react-navigation/native-stack
+```
+If you have an Expo managed project, install the dependencies with expo:
+
+```bash
+npx expo install react-native-screens react-native-safe-area-context
+```
+
+
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:

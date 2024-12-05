@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -6,6 +7,11 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
+  const navigation = useNavigation();
+  // const onPressStart = () => {
+  //   navigation.navigate('facilities');
+  // };
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -22,14 +28,15 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">About Aura</ThemedText>
         <ThemedText>
-          Placeholder about Aura
+        Aura is designed to help users with accessibility needs—whether physical, neurological, or ambient-related—find venues that cater to their specific requirements. By providing detailed information about a venue's accessibility features, Aura empowers users to make informed decisions and plan their visits with confidence.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Click the button below to select the facilities</ThemedText>
-        <ThemedText>
-          Add the button here 🔘
-        </ThemedText>
+        
+        <Button 
+        // onPress={onPressStart}
+        title='START'
+        accessibilityLabel='Start button, click to go to the facilities page'/>
       </ThemedView>
     
     </ParallaxScrollView>

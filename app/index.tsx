@@ -1,5 +1,6 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import HomeScreen from "./tabs/home";
+import Facilities from "./tabs/facilities";
 
 export default function Index() {
   return (
@@ -10,7 +11,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <HomeScreen></HomeScreen>
+      <HomeScreen ></HomeScreen>
+      {/* <Facilities></Facilities> */}
     </View>
   );
 }
