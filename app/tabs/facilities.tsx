@@ -1,11 +1,11 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Image, Platform } from 'react-native';
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { Collapsible } from '../src/components/Collapsible';
+import { ExternalLink } from '../src/components/ExternalLink';
+import ParallaxScrollView from '../src/components/ParallaxScrollView';
+import { ThemedText } from '../src/components/ThemedText';
+import { ThemedView } from '../src/components/ThemedView';
 
 // facilities tab
 export default function Facilities() {
@@ -14,7 +14,7 @@ export default function Facilities() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Facilities</ThemedText>
       </ThemedView>
       
       <Collapsible title="Light and dark mode components">
