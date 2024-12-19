@@ -1,19 +1,13 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { TabBarIcon } from '../src/components/navigation/TabBarIcon' ;
-
+import { TabBarIcon } from '../src/components/navigation/TabBarIcon';
 import { Colors } from '../src/constants/Colors';
 import { useColorScheme } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
-
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  const Stack = createNativeStackNavigator();
 
   return (
-    <NavigationContainer>
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -31,13 +25,12 @@ export default function TabLayout() {
       <Tabs.Screen
         name="facilities"
         options={{
-          title: 'Facilities',
+          title: 'facilities',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
         }}
       />
     </Tabs>
-    </NavigationContainer>
   );
 }
