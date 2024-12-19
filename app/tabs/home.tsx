@@ -1,16 +1,21 @@
-import { Image, StyleSheet, Platform, Button } from 'react-native';
+import { Image, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { HelloWave } from '../src/components/HelloWave';
 import ParallaxScrollView from '../src/components/ParallaxScrollView';
 import { ThemedText } from '../src/components/ThemedText';
 import { ThemedView } from '../src/components/ThemedView';
+import { RootStackParamList } from '../src/RoutesType/types';
+
+type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'home'>;
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
   const onPressStart = () => {
     navigation.navigate('facilities');
   };
+
 
   return (
     <ParallaxScrollView
