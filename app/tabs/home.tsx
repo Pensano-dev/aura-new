@@ -16,6 +16,11 @@ export default function HomeScreen() {
     navigation.navigate('facilities');
   };
 
+  const onPressSettings = () => {
+    navigation.navigate("screens/settings");
+  }
+
+
 
   return (
     <ParallaxScrollView
@@ -41,6 +46,11 @@ export default function HomeScreen() {
           onPress={onPressStart}
           title='START'
           accessibilityLabel='Start button, click to go to the facilities page'
+        />
+         <Button
+          onPress={onPressSettings}
+          title='cafes'
+          accessibilityLabel='Settings button, click to go to the settings page'
         />
       </ThemedView>
     </ParallaxScrollView>

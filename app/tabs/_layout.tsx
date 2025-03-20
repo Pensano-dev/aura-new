@@ -31,6 +31,15 @@ export default function TabLayout() {
           ),
         }}
       />
+       <Tabs.Screen
+        name="cafes"
+        options={{
+          title: 'Cafes',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'cafe' : 'cafe-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
