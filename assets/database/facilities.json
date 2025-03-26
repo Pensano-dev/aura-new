@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Facility 1",
-    "icon": "./assets/icons/facility1.png"
+    "name": "Comfortable Seating",
+    "icon": "comfortable-seating.png"
   },
   {
     "id": 2,
-    "name": "Facility 2",
-    "icon": "./assets/icons/facility2.png"
+    "name": "Dog Friendly",
+    "icon": "dog-friendly.png"
   },
   {
     "id": 3,
-    "name": "Facility 3",
-    "icon": "./assets/icons/facility3.png"
+    "name": "Low Volume",
+    "icon": "low-volume.png"
   },
   {
     "id": 4,
-    "name": "Facility 4",
-    "icon": "./assets/icons/facility4.png"
+    "name": "No Bright Lights",
+    "icon": "no-bright-lights.png"
   },
   {
     "id": 5,
-    "name": "Facility 5",
-    "icon": "./assets/icons/facility5.png"
+    "name": "Open Late",
+    "icon": "open-late.png"
   },
   {
     "id": 6,
-    "name": "Facility 6",
-    "icon": "./assets/icons/facility6.png"
+    "name": "Outdoor Space",
+    "icon": "outdoor-space.png"
   },
   {
     "id": 7,
-    "name": "Facility 7",
-    "icon": "./assets/icons/facility7.png"
+    "name": "Plain Food",
+    "icon": "plain-food.png"
   },
   {
     "id": 8,
-    "name": "Facility 8",
-    "icon": "./assets/icons/facility8.png"
+    "name": "WiFi",
+    "icon": "wifi.png"
   }
 ]
